@@ -1,0 +1,12 @@
+
+ERROR in No NgModule metadata found for 'AppModule'.
+npm remove webpack
+npm install --save-dev @angular/cli@latest
+
+ng update @angular/cli
+====================================================
+http://expressjs.com/ja/
+====================================================
+https://utage.headwaters.co.jp/blog/?p=5065 MongoDB
+====================================================
+
