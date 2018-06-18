@@ -9,7 +9,12 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/mean-angular5', { useMongoClient: true, promiseLibrary: require('bluebird') })
+
+// mongoose.connect('mongodb://192.168.10.106/mean-angular5', {
+//   promiseLibrary: require('bluebird')
+// })
+// mongoose.connect('mongodb://localhost/mean-angular5', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://192.168.24.96/mean-angular5', { promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
@@ -40,3 +45,8 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// You will see the previous Angular landing page,
+// when you point your browser to `http://localhost:3000`.
+// When you change the address to `http://localhost:3000/book`
+// you will see this page. ===> Express RESTful API
